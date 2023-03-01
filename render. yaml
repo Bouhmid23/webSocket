@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: webSocket
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start -p ${PORT}
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SESSION_SECRET_KEY
+        generateValue: true
