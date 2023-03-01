@@ -12,6 +12,7 @@
   "dependencies": {
     "http": "^0.0.1-security",
     "nodemon": "^2.0.20",
+    "render": "^0.1.4",
     "websocket": "^1.0.34"
   }
 }
