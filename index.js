@@ -2,8 +2,8 @@
 const http=require("http")
 const Socket=require("websocket").server
 const server=http.createServer(()=>{})
-
-server.listen(3000,()=>{
+const port=3000
+server.listen(port,()=>{
     
 })
 
@@ -11,7 +11,7 @@ const webSocket=new Socket({httpServer:server})
 
 
 const users=[]
-console.log("server started")
+console.log(`server started at port ${port}`)
 
 webSocket.on('request',(req)=>{
     const connection=req.accept()
